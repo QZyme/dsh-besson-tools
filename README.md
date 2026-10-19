@@ -6,7 +6,7 @@
 - 主仓库（Skill + MCP + 插件三件套）：https://github.com/QZyme/Besson-Tools
 - 数据：站点 195 篇（2026-10-19 同步），190 章节 + 4 独立文章 + 1 教程总汇页
 
-## 安装（三种方式任选）
+## 安装（两种方式任选）
 
 **方式 1 · DSH 插件栏（推荐）**：打开 DSH → 插件栏 → 「添加插件」→ 输入 GitHub 仓库地址
 
@@ -14,11 +14,7 @@
 https://github.com/QZyme/dsh-besson-tools
 ```
 
-或本地目录路径（源码方式）：
-
-```
-C:\Users\12899\dsh-besson-tools
-```
+或本仓库源码目录（下载解压后选择该目录即可）。
 
 安装后所有会话可用 7 个 `besson_tutorial_*` 工具。
 
@@ -28,8 +24,6 @@ C:\Users\12899\dsh-besson-tools
 - id: besson-tools
   name: dsh-besson-tools
 ```
-
-**方式 3 · npm / pnpm**（发布后）：`pnpm add dsh-besson-tools`
 
 ## 工具
 
