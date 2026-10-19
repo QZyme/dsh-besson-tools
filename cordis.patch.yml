@@ -1,0 +1,6 @@
+# dsh bundle patch: 把 besson-tools 插件插入 profile 的层栈（安装后全局挂载，所有会话可用）。
+# 若只想在某个预设内使用，请改为预设行挂载（- id: besson-tools / name: dsh-besson-tools），
+# 并从 profile 的 bundle 列表移除本包，避免重复注册。
+- insert:
+    - id: besson-tools
+      name: 'dsh-besson-tools'

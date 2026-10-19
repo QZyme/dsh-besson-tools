@@ -1,0 +1,39 @@
+{
+  "name": "dsh-besson-tools",
+  "version": "2.0.0",
+  "description": "北山Besson 教程检索/路线规划/环境清单/正文抓取（7 工具：lookup/index/series/fetch/plan/compare/env）。DSH 0.2.1 bundle 形态，可在 DSH 插件栏直接安装。数据：北山Besson 教程站 195 篇（2026-10-19）。",
+  "license": "CC-BY-NC-SA-4.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "besson-tools.mjs",
+    "lib",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh-bundle",
+    "minecraft",
+    "modding",
+    "tutorials",
+    "besson"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
