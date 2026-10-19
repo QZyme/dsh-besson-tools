@@ -50,5 +50,5 @@ https://github.com/QZyme/dsh-besson-tools
 
 ## 版本与许可
 
-- v2.0.0（2026-10-19）：7 工具、bundle 形态、适配 DSH 0.2.1-rc.2
+- v2.0.0：7 工具、bundle 形态、适配 DSH 0.2.1-rc.2（2026-10-19）
 - 许可：CC BY-NC-SA 4.0（教程内容与索引数据来自 BeiShan_Besson；代码同样按该协议提供）
