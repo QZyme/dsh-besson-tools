@@ -9,7 +9,14 @@
   "exports": {
     ".": "./lib/index.js",
     "./package.json": "./package.json",
-    "./cordis.patch.yml": "./cordis.patch.yml"
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./lookup": "./lib/tools/lookup.mjs",
+    "./index": "./lib/tools/index.mjs",
+    "./series": "./lib/tools/series.mjs",
+    "./fetch": "./lib/tools/fetch.mjs",
+    "./plan": "./lib/tools/plan.mjs",
+    "./compare": "./lib/tools/compare.mjs",
+    "./env": "./lib/tools/env.mjs"
   },
   "files": [
     "besson-tools.mjs",
