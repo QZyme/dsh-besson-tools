@@ -42,5 +42,14 @@
   ],
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QZyme/dsh-besson-tools.git"
+  },
+  "homepage": "https://github.com/QZyme/dsh-besson-tools#readme",
+  "bugs": {
+    "url": "https://github.com/QZyme/dsh-besson-tools/issues"
+  },
+  "author": "QZyme"
 }
