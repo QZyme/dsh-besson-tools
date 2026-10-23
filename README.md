@@ -18,6 +18,8 @@ https://github.com/QZyme/dsh-besson-tools
 
 安装后插件页会显示 **7 个组件**（`besson-tutorial-lookup` … `besson-tutorial-env`，每工具一行），所有会话可用 7 个 `besson_tutorial_*` 工具。
 
+**支持的 DSH 版本**：0.2.1-rc.2 及以上（0.2.1 桌面版已实测：GitHub 仓库地址安装、7 组件加载、工具功能全部通过）。
+
 **方式 2 · 预设内挂载（只在 Besson 预设里用）**：把仓库放进 `.dsh` 下任意目录，在预设插件列表加 7 行（与 `cordis.patch.yml` 相同）：
 
 ```yaml
@@ -68,3 +70,4 @@ bundle 补丁共 **7 个组件**（每个工具单独一个组件，互不依赖
 
 - v2.0.0：7 工具、bundle 形态、适配 DSH 0.2.1-rc.2（2026-10-19）；组件按工具拆分为 7 个独立组件（安装后插件页显示 7 个组件）
 - 许可：CC BY-NC-SA 4.0（教程内容与索引数据来自 BeiShan_Besson；代码同样按该协议提供）
+
