@@ -39,6 +39,8 @@
         ['besson_tutorial_fetch', '抓取一篇文章正文（url 或 query）'],
         ['besson_tutorial_plan', '按目标生成学习路线'],
         ['besson_tutorial_compare', '两个系列/版本的工程与 API 对比'],
+        ['besson_mod_scaffold', '生成工程骨架（gradle/主类/清单）'],
+        ['besson_mod_mapping', '中文 ↔ 官方映射名对照'],
         ['besson_tutorial_env', '环境搭建清单（JDK/Gradle/模板）'],
         ['besson_mod_project', '检查本地模组工程：加载器/版本/清单/常见问题'],
         ['besson_mod_migrate', '跨系列迁移清单（映射/注册/事件差异）'],
