@@ -20,7 +20,7 @@ https://github.com/QZyme/dsh-besson-tools
 
 **支持的 DSH 版本**：0.2.2-rc.1 及以上（0.2.1 桌面版已实测：GitHub 仓库地址安装、7 组件加载、工具功能全部通过）。
 
-**方式 2 · 预设内挂载（只在 Besson 预设里用）**：把仓库放进 `.dsh` 下任意目录，在预设插件列表加 7 行（与 `cordis.patch.yml` 相同）：
+**方式 2 · 预设内挂载（只在 Besson 预设里用，v2.5.0 起已内置，通常不需要）**：把仓库放进 `.dsh` 下任意目录，在预设插件列表加 7 行（与 `cordis.patch.yml` 相同）：
 
 ```yaml
 - id: besson-tutorial-lookup
@@ -68,6 +68,7 @@ bundle 补丁共 **12 行**（1 行客户端载体 + 11 个组件行，每个工
 
 ## 版本与许可
 
+- v2.5.0：bundle **内置「Besson 教程助手」agent 预设**（persona 工作流 + 11 工具集），安装插件即自动出现；`cordis.patch.yml` 含预设行
 - v2.4.6：plan/lookup 工程优先（path/series/loader/mcVersion 参数）；lookup 计数区分标题/元数据命中
 - v2.4.5：工具缺陷修复（工程体检模板清单/主入口识别、映射输出合法 JSON、检索评分标题优先、代码块行号清理）
 - v2.4.4：面板「工具调用统计」（usage.json 持久化 + 宿主 /api/dsh-besson-tools/usage 路由）
