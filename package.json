@@ -1,6 +1,6 @@
 {
   "name": "dsh-besson-tools",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "北山 Besson 模组开发助手：11 个工具检索 217 篇教程、规划学习路线、对比版本、环境搭建、工程体检、迁移清单、骨架生成与中文映射对照；附左栏入口面板（DSH 0.2.2-rc.1+ bundle）。",
   "license": "CC-BY-NC-SA-4.0",
   "type": "module",
