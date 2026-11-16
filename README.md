@@ -53,7 +53,7 @@ bundle 补丁共 **9 个组件**（每个工具单独一个组件，互不依赖
 | `besson-tutorial-compare` | `dsh-besson-tools/compare` | `besson_tutorial_compare` | 两系列/版本工程与 API 差异对比（11 项） |
 | `besson-tutorial-env` | `dsh-besson-tools/env` | `besson_tutorial_env` | 环境搭建清单与命令 |
 
-> 兼容说明：`lib/index.js`（包主入口）仍是「9 个工具一起注册」的单文件版，供旧式「一行挂载」或直接 `import` 使用；bundle 安装走的是上面的 9 组件。
+> 说明：`lib/index.js`（包主入口）为客户端载体行（空 apply），左栏面板由精确包名行触发；11 个工具由 cordis.patch.yml 的 11 个组件行分别注册。
 
 ## 系列总览
 
