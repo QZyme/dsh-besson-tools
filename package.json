@@ -1,7 +1,7 @@
 {
   "name": "dsh-besson-tools",
-  "version": "2.2.0",
-  "description": "北山Besson 教程检索/路线规划/环境清单/正文抓取（7 个独立组件：lookup/index/series/fetch/plan/compare/env）。DSH 0.2.2-rc.1+ bundle 形态，插件栏一键安装。数据：北山Besson 教程站 217 篇（2026-11-07）。",
+  "version": "2.3.0",
+  "description": "北山 Besson 模组开发助手：9 个工具检索 217 篇教程、规划学习路线、对比版本、环境搭建、工程体检与迁移清单；附左栏入口面板（DSH 0.2.2-rc.1+ bundle）。",
   "license": "CC-BY-NC-SA-4.0",
   "type": "module",
   "main": "lib/index.js",
@@ -10,16 +10,22 @@
     ".": "./lib/index.js",
     "./package.json": "./package.json",
     "./cordis.patch.yml": "./cordis.patch.yml",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
     "./lookup": "./lib/tools/lookup.mjs",
     "./index": "./lib/tools/index.mjs",
     "./series": "./lib/tools/series.mjs",
     "./fetch": "./lib/tools/fetch.mjs",
     "./plan": "./lib/tools/plan.mjs",
     "./compare": "./lib/tools/compare.mjs",
-    "./env": "./lib/tools/env.mjs"
+    "./env": "./lib/tools/env.mjs",
+    "./mod-project": "./lib/tools/mod_project.mjs",
+    "./mod-migrate": "./lib/tools/mod_migrate.mjs"
   },
   "files": [
     "besson-tools.mjs",
+    "client.js",
     "lib",
     "cordis.patch.yml",
     "icon.svg",
@@ -30,6 +36,15 @@
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
     }
   },
   "keywords": [
