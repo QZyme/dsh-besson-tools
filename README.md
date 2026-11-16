@@ -1,6 +1,6 @@
 # dsh-besson-tools
 
-北山Besson（BeiShan_Besson）Minecraft 模组开发教程的 **DSH 插件**：**9 个独立组件**（每个工具一个组件），覆盖「检索 → 路线规划 → 版本迁移对比 → 环境搭建 → 正文抓取」全流程。
+北山Besson（BeiShan_Besson）Minecraft 模组开发教程的 **DSH 插件**：**11 个独立组件**（每个工具一个组件），覆盖「检索 → 路线规划 → 版本迁移对比 → 环境搭建 → 正文抓取 → 工程体检 → 骨架生成 → 中文映射」全流程；内置 **Web 左栏面板**（实时数据 + 工具速查 + 系列矩阵）。
 
 - 教程站：https://beishanair.github.io/
 - 主仓库（Skill + MCP + 插件三件套）：https://github.com/QZyme/Besson-Tools
@@ -16,7 +16,7 @@ https://github.com/QZyme/dsh-besson-tools
 
 或本仓库源码目录（下载解压后选择该目录即可）。
 
-安装后插件页会显示 **9 个组件**（`besson-tutorial-lookup` … `besson-tutorial-env` + `besson-mod-project` / `besson-mod-migrate`，每工具一行），所有会话可用 9 个 `besson_*` 工具；左上栏出现「北山 Besson 模组助手」入口面板。
+安装后插件页会显示 **11 个组件**（`besson-tutorial-lookup` … `besson-tutorial-env` + `besson-mod-project` / `besson-mod-migrate` / `besson-mod-scaffold` / `besson-mod-mapping`，每工具一行），所有会话可用 11 个 `besson_*` 工具；左上栏出现「北山 Besson 模组助手」入口面板（含实时数据）。
 
 **支持的 DSH 版本**：0.2.2-rc.1 及以上（0.2.1 桌面版已实测：GitHub 仓库地址安装、7 组件加载、工具功能全部通过）。
 
@@ -41,7 +41,7 @@ https://github.com/QZyme/dsh-besson-tools
 
 ## 组件与工具
 
-bundle 补丁共 **9 个组件**（每个工具单独一个组件，互不依赖）：
+bundle 补丁共 **12 行**（1 行客户端载体 + 11 个组件行，每个工具单独一个组件，互不依赖）：
 
 | 组件 id | 模块 | 工具 | 作用 |
 |---|---|---|---|
@@ -68,6 +68,8 @@ bundle 补丁共 **9 个组件**（每个工具单独一个组件，互不依赖
 
 ## 版本与许可
 
+- v2.4.1：面板实时数据（stats.json 自动刷新）、11 工具 / 11 组件（新增骨架生成 + 中文映射）、面板修复（精确包名行）、DSH 0.2.2-rc.1 实测
+- v2.4.1：面板实时数据 + 11 工具 / 11 组件（骨架生成 + 中文映射）、面板加载修复（精确包名载体行）
 - v2.3.0：9 个组件（新增工程体检 + 迁移清单）、左上栏入口面板（client.js）、DSH 0.2.2-rc.1 实测
 - v2.2.0：数据同步 2026-11-07（217 篇，E 系列新增 #34~#43）
 - v2.1.0：数据同步 2026-10-29（207 篇）
