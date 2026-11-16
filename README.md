@@ -1,6 +1,6 @@
 # dsh-besson-tools
 
-北山Besson（BeiShan_Besson）Minecraft 模组开发教程的 **DSH 插件**：**7 个独立组件**（每个工具一个组件），覆盖「检索 → 路线规划 → 版本迁移对比 → 环境搭建 → 正文抓取」全流程。
+北山Besson（BeiShan_Besson）Minecraft 模组开发教程的 **DSH 插件**：**9 个独立组件**（每个工具一个组件），覆盖「检索 → 路线规划 → 版本迁移对比 → 环境搭建 → 正文抓取」全流程。
 
 - 教程站：https://beishanair.github.io/
 - 主仓库（Skill + MCP + 插件三件套）：https://github.com/QZyme/Besson-Tools
@@ -16,7 +16,7 @@ https://github.com/QZyme/dsh-besson-tools
 
 或本仓库源码目录（下载解压后选择该目录即可）。
 
-安装后插件页会显示 **7 个组件**（`besson-tutorial-lookup` … `besson-tutorial-env`，每工具一行），所有会话可用 7 个 `besson_tutorial_*` 工具。
+安装后插件页会显示 **9 个组件**（`besson-tutorial-lookup` … `besson-tutorial-env` + `besson-mod-project` / `besson-mod-migrate`，每工具一行），所有会话可用 9 个 `besson_*` 工具；左上栏出现「北山 Besson 模组助手」入口面板。
 
 **支持的 DSH 版本**：0.2.2-rc.1 及以上（0.2.1 桌面版已实测：GitHub 仓库地址安装、7 组件加载、工具功能全部通过）。
 
@@ -41,7 +41,7 @@ https://github.com/QZyme/dsh-besson-tools
 
 ## 组件与工具
 
-bundle 补丁共 **7 个组件**（每个工具单独一个组件，互不依赖）：
+bundle 补丁共 **9 个组件**（每个工具单独一个组件，互不依赖）：
 
 | 组件 id | 模块 | 工具 | 作用 |
 |---|---|---|---|
@@ -51,9 +51,9 @@ bundle 补丁共 **7 个组件**（每个工具单独一个组件，互不依赖
 | `besson-tutorial-fetch` | `dsh-besson-tools/fetch` | `besson_tutorial_fetch` | 抓取一篇教程正文（url 或 query 自动解析；仅站内 https） |
 | `besson-tutorial-plan` | `dsh-besson-tools/plan` | `besson_tutorial_plan` | 按目标生成学习路线（新手/进阶/neoforge/forge/迁移/26.1） |
 | `besson-tutorial-compare` | `dsh-besson-tools/compare` | `besson_tutorial_compare` | 两系列/版本工程与 API 差异对比（11 项） |
-| `besson-tutorial-env` | `dsh-besson-tools/env` | `besson_tutorial_env` | 环境搭建清单（JDK/Gradle/模板仓库/命令/坑点） |
+| `besson-tutorial-env` | `dsh-besson-tools/env` | `besson_tutorial_env` | 环境搭建清单与命令 |
 
-> 兼容说明：`lib/index.js`（包主入口）仍是「7 个工具一起注册」的单文件版，供旧式「一行挂载」或直接 `import` 使用；bundle 安装走的是上面的 7 组件。
+> 兼容说明：`lib/index.js`（包主入口）仍是「9 个工具一起注册」的单文件版，供旧式「一行挂载」或直接 `import` 使用；bundle 安装走的是上面的 9 组件。
 
 ## 系列总览
 
@@ -68,6 +68,7 @@ bundle 补丁共 **7 个组件**（每个工具单独一个组件，互不依赖
 
 ## 版本与许可
 
+- v2.3.0：9 个组件（新增工程体检 + 迁移清单）、左上栏入口面板（client.js）、DSH 0.2.2-rc.1 实测
 - v2.2.0：数据同步 2026-11-07（217 篇，E 系列新增 #34~#43）
 - v2.1.0：数据同步 2026-10-29（207 篇）
 - v2.0.0：7 工具、bundle 形态、适配 DSH 0.2.1-rc.2（2026-10-19）；组件按工具拆分为 7 个独立组件（安装后插件页显示 7 个组件）
